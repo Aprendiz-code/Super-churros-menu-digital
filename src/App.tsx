@@ -13,7 +13,7 @@ import imgPanzerottiRanchero from '../img/pacerotti ranchero.jfif'
 import imgPanzerottiPollo from '../img/pancerotti de pollo.jpg'
 import imgPanzerottiHawaiano from '../img/pancerotti hawaiano.jfif'
 
-const WHATSAPP_NUMBER = '573157760273'
+const WHATSAPP_NUMBER = '573153637645'
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, quisiera información sobre el menú de Super Churros.')}`
 
 type Cat = 'Salados' | 'Dulces' | 'Adicionales' | 'Combos'
