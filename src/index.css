@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #FFF8EF;
+  --color-choco: #302019;
+  --color-caramel: #B86A35;
+  --color-gold: #FFC857;
+  --color-warm: #756B63;
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+}
+body { background: var(--color-cream); color: var(--color-choco); font-family: var(--font-sans); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.wa-fab { animation: wa-bob 3s ease-in-out infinite; }
+.wa-fab::before {
+  content: ''; position: absolute; inset: 0; border-radius: 9999px;
+  background: #25D366; animation: wa-pulse 2s ease-out infinite; z-index: -1;
+}
+@keyframes wa-pulse { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(1.7); opacity: 0; } }
+@keyframes wa-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+@media (prefers-reduced-motion: reduce) { .wa-fab, .wa-fab::before { animation: none; } }

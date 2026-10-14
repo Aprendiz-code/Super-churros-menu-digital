@@ -1,0 +1,10 @@
+{
+  "description": "Explore a visually appealing digital menu for SUPER CHURROS, designed for easy navigation and seamless ordering, enhancing the customer experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
