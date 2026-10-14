@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import HERO from '../img/Principal.jpg'
+import BRAND_LOGO from '../img/logo super churros .jfif'
 import imgArequipe from '../img/Arequipe-Photoroom.png'
 import imgGuayaba from '../img/guayaba.jpg'
 import imgHawaiano from '../img/hawaiano-Photoroom.png'
@@ -143,7 +144,7 @@ export default function App() {
       <header className="sticky top-0 z-30 border-b border-choco/5 bg-cream/90 backdrop-blur">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-3 lg:px-10">
           <div className="flex items-center gap-3">
-            <div className="grid size-11 place-items-center rounded-full bg-gold font-display text-lg font-bold">SC</div>
+            <img src={BRAND_LOGO} alt="Logo Super Churros" className="size-11 shrink-0 rounded-full object-cover" />
             <div className="leading-tight">
               <p className="font-display text-lg font-bold tracking-wide">SUPER CHURROS</p>
               <p className="text-sm font-medium text-caramel">¡Sabor que enamora!</p>
