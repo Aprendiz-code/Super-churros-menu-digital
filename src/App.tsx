@@ -26,17 +26,17 @@ const promos: Item[] = [
 ]
 
 const products: Item[] = [
-  { id: 'queso', name: 'Churros de Queso', cat: 'Salados', image: imgQueso },
-  { id: 'pollo', name: 'Churros de Pollo', cat: 'Salados', image: imgPollo },
-  { id: 'toci', name: 'Churros de Pollo con Tocineta', cat: 'Salados', image: imgTocineta },
-  { id: 'champ', name: 'Churros de Pollo con Champiñón', cat: 'Salados', image: imgChampinon },
-  { id: 'hawa', name: 'Churros Hawaiano', cat: 'Salados', image: imgHawaiano },
-  { id: 'areq', name: 'Churros de Arequipe', cat: 'Dulces', image: imgArequipe },
-  { id: 'guay', name: 'Churros de Guayaba', cat: 'Dulces', image: imgGuayaba },
-  { id: 'preco', name: 'Churros Precocidos', desc: 'Bandeja x 10 unidades', cat: 'Adicionales', image: imgPrecocidos },
-  { id: 'p-ran', name: 'Panzerotti Ranchero', price: 2800, cat: 'Adicionales', image: imgPanzerottiRanchero },
-  { id: 'p-pol', name: 'Panzerotti de Pollo', price: 3200, cat: 'Adicionales', image: imgPanzerottiPollo },
-  { id: 'p-haw', name: 'Panzerotti Hawaiano', price: 3000, cat: 'Adicionales', image: imgPanzerottiHawaiano },
+  { id: 'queso', name: 'Churros de Queso', price: 1500, cat: 'Salados', image: imgQueso },
+  { id: 'pollo', name: 'Churros de Pollo', price: 3500, cat: 'Salados', image: imgPollo },
+  { id: 'toci', name: 'Churros de Pollo con Tocineta', price: 3800, cat: 'Salados', image: imgTocineta },
+  { id: 'champ', name: 'Churros de Pollo con Champiñón', price: 3800, cat: 'Salados', image: imgChampinon },
+  { id: 'hawa', name: 'Churros Hawaiano', price: 3000, cat: 'Salados', image: imgHawaiano },
+  { id: 'areq', name: 'Churros de Arequipe', price: 1500, cat: 'Dulces', image: imgArequipe },
+  { id: 'guay', name: 'Churros de Guayaba', price: 1500, cat: 'Dulces', image: imgGuayaba },
+  { id: 'preco', name: 'Churros Precocidos', desc: 'Bandeja x 10 unidades', price: 13000, cat: 'Adicionales', image: imgPrecocidos },
+  { id: 'p-ran', name: 'Panzerotti Ranchero', price: 3500, cat: 'Adicionales', image: imgPanzerottiRanchero },
+  { id: 'p-pol', name: 'Panzerotti de Pollo', price: 4000, cat: 'Adicionales', image: imgPanzerottiPollo },
+  { id: 'p-haw', name: 'Panzerotti Hawaiano', price: 3500, cat: 'Adicionales', image: imgPanzerottiHawaiano },
 ]
 const all = [...promos, ...products]
 const filters = ['Todos', 'Salados', 'Dulces'] as const
