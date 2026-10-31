@@ -130,10 +130,13 @@ export default function App() {
     ...lines.map((line) => `• ${line.q} × ${line.name} — ${line.price ? fmt(line.price * line.q) : 'Precio por confirmar'}`),
     '',
     '*RESUMEN DEL PAGO*',
-    `Subtotal parcial: ${fmt(total)}${pending ? ' (pendiente de confirmar precios finales)' : ''}`,
-    'Costo de envío: Por cotizar',
+    `${pending ? 'Subtotal parcial' : 'Subtotal'}: ${fmt(total)}${pending ? ' (pendiente de confirmar precios finales)' : ''}`,
+    'Costo de envío: Gratis',
+    `Total a pagar: ${fmt(total)}${pending ? ' (sin incluir productos con precio pendiente)' : ''}`,
     '',
-    'Quedo a la espera de la confirmación de precios para proceder con la preparación y despacho del pedido.',
+    pending
+      ? 'Los productos con precio pendiente se confirmarán por WhatsApp antes de preparar el pedido.'
+      : 'Quedo atento a la confirmación del pedido para proceder con su preparación y despacho.',
     'Muchas gracias por elegir Super Churros.',
   ].join('\n')
   const orderLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(orderMessage)}`
